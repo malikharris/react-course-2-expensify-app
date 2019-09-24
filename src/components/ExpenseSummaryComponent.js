@@ -6,7 +6,7 @@ import expensesTotal from "../selectors/expenses-total";
 
 const ExpenseSummaryComponent = ({ expenseCount, expensesTotal }) => {
 	const expenseWord = expenseCount === 1 ? "expense" : "expenses";
-	const total = numeral(expensesTotal / 100).format("$0.0.00");
+	const total = numeral(expensesTotal / 100).format("$0,0.00");
 
 	return (
 		<div>
